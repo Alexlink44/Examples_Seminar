@@ -25,21 +25,28 @@ void PrintArrayResult(int[] numbers)
 {
     int count = numbers.Length;
     Console.WriteLine();
+    int A = 0;
     for (int p = 0; p < count; p++)
     {
         if (numbers[p] % 2 == 0)
         {
-            Console.Write($"{numbers[p]}");
+            A++;
         }
-        if (p == count - 1)
+    }
+    int[] T = new int [A];
+    int B = 0;
+    int P = 0;
+    while (P < count)
+    {
+        if (numbers[P] % 2 == 0)
         {
-            Console.Write(".");
-            break;
+            T[B] = numbers[P];
+            Console.Write(T[B]);
+            B++;
+            if (A == B) Console.Write(".");
+            else Console.Write(", ");
         }
-        if (numbers[p] % 2 == 0)
-        {
-            Console.Write(", ");
-        }
+        P++;
     }
 }
 
