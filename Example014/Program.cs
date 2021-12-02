@@ -16,6 +16,7 @@ if (-100 < num && num < 100)
     Console.WriteLine("Третьей цифры не существует");
 else
 {
+    if (num < 0) num = num * -1;
     while (num / 1000 > 0)
     {
         num = num / 10;
