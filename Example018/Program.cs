@@ -1,5 +1,5 @@
 ﻿// Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
-int EX(int Z, int X)
+int x(int Z, int X)
 {
     if (Z % 2 == 0) X = 0;
     else X = 1;    
@@ -31,7 +31,7 @@ int Z = 0;
 int Y = 0;
 while (Z < 2)
 {
-    X = EX(Z, X);
+    X = x(Z, X);
     F(X, Y);
     if (X == 0) Y = 1;
     else Y = 0;
