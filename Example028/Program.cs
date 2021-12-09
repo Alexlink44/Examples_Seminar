@@ -14,7 +14,9 @@ int[] Array(string number)
     for (int i = 0; i < length; i++)
     {
         if(number[i] == value) numb[i] = 0;
-        else numb[i] = Convert.ToInt32(number[i]) -48;
+        else numb[i] = (int)(number[i] - '0');
+        //(int)Char.GetNumericValue(number[i]);
+        //Convert.ToInt32(number[i]) -48; ---
     }
     return numb;
 }
