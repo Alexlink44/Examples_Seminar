@@ -4,7 +4,7 @@ int[] array = new int[12];
 for (int i = 0; i < 12; i++)
 {
     int k = new Random().Next(0, 2);
-    array[i] = new Random().Next(0, 10);
+    array[i] = new Random().Next(0, 11);
     if (k == 1) array[i] = array[i] * (-1);
    Console.Write($"{array[i]}  ");
 }
