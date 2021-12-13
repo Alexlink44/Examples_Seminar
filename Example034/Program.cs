@@ -36,7 +36,22 @@ void ArrayReverse(int[] array)
     }
 }
 
+void ArrayElementsReverse(int[] array)
+{
+    Console.WriteLine();
+    int length = array.Length;
+    for (int i = 0; i < length; i++)
+    {
+        array[i] = array[i] * (-1);
+        if (i == 0) {Console.Write($"[{array[i]}, ");}
+        if (i == (length - 1)) {Console.Write($"{array[i]}]");}
+        if (i > 0 && i < (length - 1)) {Console.Write($"{array[i]}, ");}
+    }
+}
 
 int size = new Random().Next(5, 10);
 int[] array = Array(size);
-ArrayReverse(array);
+//ArrayReverse(array);
+ArrayElementsReverse(array);
+
+
