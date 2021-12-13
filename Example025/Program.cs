@@ -35,14 +35,14 @@ double step = Convert.ToDouble(Console.ReadLine());
 
 double set = 0;
 double k = 1;
-
 while (k < number)
 {
+    Console.WriteLine(k);
     set = set + k;
     k = k + step;
-    Console.WriteLine(k);
+    
 }
-
+Console.WriteLine(number);
 set = set + number;
 
 Console.WriteLine(set);

@@ -20,12 +20,11 @@ for (int i = 0; i < 8; i++)
 
 
 
-
+Console.Write("{");
 for (int i = 0; i < 8; i++)
-{   if (i == 0 || i == 7)
+{   if (i == 7)
     {
-        if (i == 0) {Console.Write("{"); Console.Write($"{array[i]}, ");}
-        if (i == 7) {Console.Write($"{array[i]}"); Console.Write("}");}
+        Console.Write($"{array[i]}"); Console.Write("}");
     }
     else {Console.Write($"{array[i]}, ");}
 }

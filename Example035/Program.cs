@@ -20,10 +20,9 @@ void FindNumber(int[] array)
     int number = int.Parse(Console.ReadLine());
     int length = array.Length;
     int i = 0;
-    while (i < length)
+    for (; i < length; i++)
     {
         if (array[i] == number) {Console.WriteLine($"Искомое число является {i + 1}-м элементом массива"); break;}
-        i++;
     }
     if (i == length && array[i - 1] != number) {Console.WriteLine("Искомое число не найдено в данном массиве");}
 }

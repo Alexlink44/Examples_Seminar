@@ -13,12 +13,13 @@ int[] Numbers(int amount)
 
 void EvenCubes(int[] numbers)
 {
+    int number = 0;
     int length = numbers.Length;
     for (int i = 0; i < length; i++)
     {
-        int number = numbers[i] * numbers[i] * numbers[i];
         if (numbers[i] % 2 == 0 && numbers[i] % 10 != 0)
         {
+            number = numbers[i] * numbers[i] * numbers[i];
             Console.WriteLine($"{numbers[i]}^3 = {number}");
         }
     }
