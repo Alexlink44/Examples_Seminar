@@ -29,11 +29,13 @@ int[,] Spiral(int [,] matrix)
     int j = 0;
     int j2 = 1;
     int i2 = 1;
+    int k = 0;
+    int h = 0;
     while(A <= matrix.Length)
     {
-        for (;i >= 0 && i < trolley; i = i + i2)
+        for (;i >= 0 + k + h && i < trolley - h; i = i + i2) //строка
         {
-            for (;j >= 0 && j < line; j = j + j2)
+            for (;j >= 0 + h && j < line - h; j = j + j2) //столбец
             {
                 matrix[i, j] = A;
                 A++;
@@ -44,6 +46,11 @@ int[,] Spiral(int [,] matrix)
         i2 = i2 * (-1);
         j2 = j2 * (-1);
         j = j + j2;
+        k++;
+        if (k == 2)
+        {
+            k = 0; h++;
+        }
     }
     
 
