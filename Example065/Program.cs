@@ -47,13 +47,8 @@ int[,] Spiral(int [,] matrix)
         j2 = j2 * (-1);
         j = j + j2;
         k++;
-        if (k == 2)
-        {
-            k = 0; h++;
-        }
+        if (k == 2) {k = 0; h++;}
     }
-    
-
     return matrix;
 }
 
