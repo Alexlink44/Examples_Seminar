@@ -57,7 +57,8 @@ int[,] Spiral(int [,] matrix)
     return matrix;
 }
 
-int[,] matrix = new int[5,5];
+
+int[,] matrix = new int[10,10];
 
 
 Spiral(matrix);
