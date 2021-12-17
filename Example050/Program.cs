@@ -9,7 +9,6 @@ int[,] Matrix(int n, int k)
         {
             matrix[i, j] = new Random().Next(1, 10);
         }
-        Console.WriteLine();
     }
     return matrix;
 }
