@@ -6,4 +6,4 @@ void NNumbers(int N)
     if (N > 0) {NNumbers(N - 1); Console.WriteLine(N);}
 }
 
-NNumbers(5);
+NNumbers(10);
